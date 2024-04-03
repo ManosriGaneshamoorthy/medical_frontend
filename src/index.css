@@ -1,0 +1,105 @@
+
+body{
+    background-image: url('https://www.missouripartnership.com/wp-content/uploads/2018/01/iStock-695349930.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Adjust the height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+.singin-form{
+    width: 100%;
+    height: 60vh;
+    background-color: #f0d6e1;
+     
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin:20px,0px ;
+}
+.form{
+    flex-basis:50%;
+    text-align: center;
+}
+.form h1{
+    color:#825559;
+    
+}
+.form h3{
+    margin:10px 0px;
+    background-color: rgb(125, 86, 100);
+    color:#f0d6e1;
+}
+.dashboard-container{
+    width:100%;
+}
+.dashboard-row{
+    display:flex;
+}
+.dashboard-menu{
+    flex-basis: 25%;
+    padding:10px;
+    border-right: 1px solid #231e20;
+    background-color: rgb(237, 219, 219);
+}
+.dashboard-body{
+    flex-basis:80%;
+    padding:10px;
+}
+.table{
+    margin-top:20px;
+}
+.heading-row{
+    display: flex;
+    background-attachment: white;
+    justify-content:space-between;
+    align-items:center;
+}
+.heading-row h2{
+    color:#b75671;
+}
+.top-menu .logo h2{
+    color:#9d4860;
+    text-transform:uppercase;
+}
+.top-menu{
+    padding:20px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color: #f7f2f3;
+}
+.dashboard-graph-row{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #f4d6dc;
+}
+.graph{
+    margin:10px;
+}
+.navigation{
+    display:none;
+}
+@media(max-width:992px){
+    .dashboard-menu{
+       display:none;
+    }
+    .dashboard-body{
+        flex-basis:100%;
+    }
+    .navigation{
+        display:initial;
+    }
+}
